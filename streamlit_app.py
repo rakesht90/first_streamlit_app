@@ -1,4 +1,6 @@
-import streamlit
+import streamlit as st
 
-streamlit.title('My parents new healthy dinner')
-streamlit.heading('Breakfast')
+st.title('My parents new healthy dinner')
+
+st.header('Breakfast Menu')
+st.header('A header with _italics_ :blue[colors] and emojis :sunglasses:')
