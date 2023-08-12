@@ -36,6 +36,6 @@ my_cur.close()
 my_cnx.close()
 fruit= pandas.DataFrame(my_data_all)
 st.dataframe(fruit)
-fruit_choice = st.text_input('What fruit would you like to add?')
-st.write('Thanks for adding  ')
+fruit_entered = st.text_input('What fruit would you like to add?')
+st.write('Thanks for adding', fruit_entered)
 
