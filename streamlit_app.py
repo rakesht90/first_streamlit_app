@@ -31,6 +31,6 @@ st.header("Fruit load list contains:")
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from FRUIT_LOAD_LIST")
-my_data_all = my_cur.fetchall()
+my_data_all = my_cur.fulltable()
 st.dataframe(my_data_all)
 
