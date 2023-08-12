@@ -23,9 +23,10 @@ st.dataframe(fruits_to_show)
 #import requests
 #create the repeatable code block (called function)
 def get_fruityvice_data(this_fruit_choice):
-  fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ this_fruit_choice)
-fruityvice_normalized= pandas.json_normalize(fruityvice_response.json())
-return fruityvice_normalized
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ this_fruit_choice)
+    fruityvice_normalized= pandas.json_normalize(fruityvice_response.json())
+     return fruityvice_normalized
+# new section to display fruityvice api response
 st.header("Fruityvice Fruit Advice!")
 try:
     fruit_choice = st.text_input('What fruit would you like information about?')
