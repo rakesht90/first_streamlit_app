@@ -35,8 +35,10 @@ try:
     else:
          back_from_function = get_fruityvice_data(fruit_choice)
          st.dataframe(back_from_function)
-#import snowflake.connector
+
 st.stop()
+#import snowflake.connector
+
 
 st.header("Fruit load list contains:")
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
